@@ -1,0 +1,38 @@
+.site-header {
+  min-height: 0;
+  padding: 15px 0;
+}
+
+// wraps the logo container and nav container
+.header__wrap {
+  @media (min-width: $grid-float-breakpoint){ // when nav is not collapsed
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// wraps the logo itself and the nav toggle
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+// id of nav menu in the header-above-nav widget
+#menu-header-above-nav {
+  @extend .nav;
+  @extend .navbar-nav;
+}
+
+.navbar-collapse.collapse {
+  @media (min-width: $grid-float-breakpoint) {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

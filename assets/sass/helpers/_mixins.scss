@@ -1,0 +1,52 @@
+// This creates an overlay over the parent element
+// You will likely need to apply some type of positioning to the parent element (relative, absolute, etc..)
+@mixin overlay($color: rgba(0,0,0,.5)) {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $color;
+}
+
+/*=============================================================
+    # Breakpoints
+    - example usage: @include bp-sm { // code goes in here }
+ =============================================================*/
+@mixin bp-sm {
+  @media(min-width: $screen-sm-min) {
+    @content;
+  }
+}
+
+@mixin bp-md {
+  @media(min-width: $screen-md-min) {
+    @content;
+  }
+}
+
+@mixin bp-lg {
+  @media(min-width: $screen-lg-min) {
+    @content;
+  }
+}
+
+@mixin bp-xs-max {
+  @media(max-width: $screen-xs-max) {
+    @content;
+  }
+}
+
+@mixin bp-sm-max {
+  @media(max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+@mixin bp-md-max {
+  @media(max-width: $screen-md-max) {
+    @content;
+  }
+}

@@ -1,0 +1,15 @@
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; margin-right: 20px; margin-bottom: 15px; }
+.alignright { float: right; margin-left: 20px; margin-bottom: 15px; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+#wpadminbar {
+  @media(max-width: 600px) {
+   top: -46px;
+  }
+}

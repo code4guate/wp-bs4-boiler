@@ -1,0 +1,21 @@
+// wraps the logo container and nav container
+.header__wrap {
+  @media (min-width: $grid-float-breakpoint){ // when nav is not collapsed
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// wraps the logo itself and the nav toggle
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}

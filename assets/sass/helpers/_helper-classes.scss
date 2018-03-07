@@ -1,0 +1,27 @@
+.full-width {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: 768px) {
+    margin-left: calc(-50vw + 360px); // half of 720 (750px - 30px of padding)
+    margin-right: calc(-50vw + 360px); // half of 720 (750px - 30px of padding)
+    padding-left: calc(50vw - 360px);
+    padding-right: calc(50vw - 360px);
+  }
+
+  @media (min-width: 992px) {
+    margin-left: calc(-50vw + 470px); // half of 940 (970px - 30px of padding)
+    margin-right: calc(-50vw + 470px); // half of 940 (970px - 30px of padding)
+    padding-left: calc(50vw - 470px);
+    padding-right: calc(50vw - 470px);
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: calc(-50vw + 570px); // half of 1140 (1170px - 30px of padding)
+    margin-right: calc(-50vw + 570px); // half of 11400 (1170px - 30px of padding)
+    padding-left: calc(50vw - 570px);
+    padding-right: calc(50vw - 570px);
+  }
+}

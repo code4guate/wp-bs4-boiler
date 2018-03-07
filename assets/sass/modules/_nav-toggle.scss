@@ -1,0 +1,44 @@
+.navbar-toggle {
+  position: relative;
+  border: none;
+  margin: 0 -10px 0 15px; // left is to counteract padding and right is so we don't butt up against logo
+
+  &:focus {
+    background-color: transparent !important;
+  }
+
+
+  .icon-bar {
+    //width: 22px;
+    transition: all 0.2s;
+    position: relative;
+  }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+    left: 3px; // needed to center the "X"
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+    left: 3px; // needed to center the "X"
+  }
+
+  &.collapsed {
+    .top-bar {
+      transform: rotate(0);
+      left: 0;
+    }
+    .middle-bar {
+      opacity: 1;
+    }
+    .bottom-bar {
+      transform: rotate(0);
+      left: 0;
+    }
+  }
+
+}
